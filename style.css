@@ -221,10 +221,15 @@ body {
 
     .dolni > .sluzby {
         margin-right: 60px;
+        min-width: 430px;
     }
 
     .dolni > .sluzby > p {
         margin-right: 0;
+    }
+
+    .dolni > .prehled {
+        min-width: 550px;
     }
 
 
