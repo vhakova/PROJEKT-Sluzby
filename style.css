@@ -130,7 +130,7 @@ body {
     .karticka img {
         width: 40px;
         height: 40px;
-        margin: 40px auto 10px auto;
+        margin: 20px auto 10px auto;
     }
 
     .karticka {
@@ -192,6 +192,11 @@ body {
 
 
 /* Střední */
+
+    .sluzby h2 {
+        margin-top: 40px;
+    } 
+
     .stredni {
         display: flex;
         margin: 80px 0;
@@ -202,16 +207,11 @@ body {
         margin-left: 60px;
     }
 
-    .karticka {
-        padding-bottom: 5px;
-        margin-bottom: 0;
-    }
-
 
 /* Dolní */
     .dolni {
         display: flex;
-        margin-bottom: 60px;
+        margin-bottom: 0px;
     }
 
     .dolni > .sluzby {
