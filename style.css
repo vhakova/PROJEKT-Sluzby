@@ -1,0 +1,226 @@
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+
+/* font-family: 'Montserrat', sans-serif; */
+
+body {
+    background-color: #FAFAFA;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Top */
+.banner {
+    text-align: center;
+    margin: 60px 75px 40px 75px;
+}
+
+.obrazek {
+    max-width: 100%;
+}
+
+.titulek {
+    text-align: center;
+}
+
+.titulek h1 {
+    font-size: 28px;
+    font-weight: 500 bold;
+    margin: 10px 0;
+}
+
+.cara {
+    width: 60px;
+    border: 1px solid #407BFF;
+    background-color: #407BFF;
+    margin-bottom: 30px;
+}
+
+.text {
+    font-size: 16px;
+    color: #8B8B8B;
+    text-align: center;
+    margin: 30px 20px 40px 20px;
+    font-weight: 300;
+}
+
+/* Tlačítka */
+
+.tlacitko {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    color: #FFFFFF;
+    font-weight: 400;
+    padding: 10px 30px;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modre {
+    background-color: #407BFF;
+    margin-bottom: 10px;
+    width: 195px;
+}
+
+.sede {
+    background-color: #8B8B8B;
+    width: 230px;
+}
+
+
+/* Služby */
+.sluzby .text {
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.sluzby h2 {
+    font-size: 16px;
+    text-align: center;
+    font-weight: 500 bold;
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+
+.karticka {
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px lightgray;
+    margin: 20px;
+}
+
+.karticka p {
+    margin-left: 0px;
+    padding: 20px;
+    font-size: 13px;
+    font-weight: 300;
+    color: #8B8B8B;
+}
+
+.karticka img {
+    margin: 20px;
+    
+}
+
+/* Tablet */
+
+@media screen and (min-width: 640px) {
+
+/*Tlačítka*/
+    .cudliky {
+        display: flex;
+        justify-content: center;
+    }
+    .tlacitko {
+        margin: 0;
+    }
+
+    .sede {
+        margin-left: 20px;
+    }
+
+/* Kartičky */
+    .prehled {
+        display: flex;
+    }
+
+    .karticka img {
+        width: 40px;
+        height: 40px;
+        margin: 40px auto 10px auto;
+    }
+
+    .karticka {
+        flex: 1 1 calc( (100% - 40px) / 3);
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .karticka p {
+        margin: 0;
+        text-align: center;
+        padding: 10px 15px;
+    }    
+}
+
+/* Desktop */
+@media screen and (min-width: 1100px) {
+    .kontejner {
+        max-width: 1040px;
+        margin: 60px auto 0;
+    }
+
+    /* Horní */
+    .horni {
+        display: flex;
+    }
+
+    .banner,
+    .obsah {
+        flex: 0 0 50%;
+    }
+    .banner {
+        order: 1;
+        margin: 0;
+    }
+
+    .obsah {
+        margin-right: 90px;
+    }
+
+    .titulek {
+        margin-top: 50px;
+    }
+
+    .text,
+    .titulek {
+        text-align: left;
+        margin-left: 10px;
+    }
+
+    .cara {
+        margin: 8px 0;
+    }
+
+    .cudliky {
+        justify-content: left;
+    }
+
+
+/* Střední */
+    .stredni {
+        display: flex;
+        margin: 80px 0;
+    }
+
+    .stredni > .sluzby {
+        order: 2;
+        margin-left: 60px;
+    }
+
+    .karticka {
+        padding-bottom: 5px;
+        margin-bottom: 0;
+    }
+
+
+/* Dolní */
+    .dolni {
+        display: flex;
+        margin-bottom: 60px;
+    }
+
+    .dolni > .sluzby {
+        margin-right: 60px;
+    }
+
+    .dolni > .sluzby > p {
+        margin-right: 0;
+    }
+
+
+}
