@@ -205,6 +205,11 @@ body {
     .stredni > .sluzby {
         order: 2;
         margin-left: 60px;
+        min-width: 430px; 
+    }
+
+    .stredni > .prehled {
+        min-width: 550px;
     }
 
 
