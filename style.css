@@ -24,7 +24,7 @@ body {
 
 .titulek h1 {
     font-size: 28px;
-    font-weight: 500 bold;
+    font-weight: 500;
     margin: 10px 0;
 }
 
@@ -79,7 +79,7 @@ body {
 .sluzby h2 {
     font-size: 16px;
     text-align: center;
-    font-weight: 500 bold;
+    font-weight: 500;
     margin-top: 70px;
     margin-bottom: 15px;
 }
@@ -208,6 +208,10 @@ body {
         order: 2;
         margin-left: 60px;
         min-width: 430px; 
+    }
+
+    .stredni > .sluzby p {
+        margin-right: 0;
     }
 
     .stredni > .prehled {
